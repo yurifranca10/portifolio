@@ -1,0 +1,72 @@
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+a{
+	color:#667;
+}
+/* Style the header */
+header {
+background-color: #FF8C00;
+padding: 30px;
+text-align: center;
+font-size: 35px;
+color: white;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+float: left;
+width: 30%;
+ 
+background: #32CD32;
+padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+nav ul img{
+width: 30px;
+height: 30px;
+}
+article {
+float: left;
+padding: 20px;
+width: 70%;
+background-color: #f1f1f1;
+}
+article img{
+width: 250px;
+height: 250px;
+}
+form {
+	background: #808080;
+}
+
+/* Clear floats after the columns */
+section::after {
+background: #ccc;
+content: "";
+display: table;
+clear: both;
+border:Borda outset;
+}
+/* Style the footer */
+footer {
+background-color: #777;
+padding: 10px;
+text-align: center;
+color: white;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+nav, article {
+width: 100%;
+height: auto;
+}
+}
+</style>
